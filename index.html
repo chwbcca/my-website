@@ -3,31 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eitan Feldman</title>
+    <title>Eitan Feldman: Travels & Reflections</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: auto;
-        }
-        h1 { color: #111; }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; }
+        .container { max-width: 900px; margin: auto; padding: 40px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1, h2, h3 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Navigation */
+        nav { background: #333; color: #fff; padding: 15px 40px; }
+        nav .container { background: transparent; box-shadow: none; padding: 0; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-around; }
+        nav a { text-color: #fff; text-decoration: none; font-family: sans-serif; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+
+        /* Profile Header */
+        header { text-align: center; margin-bottom: 4em; padding: 60px 0; border-bottom: 1px solid #eee; }
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .intro-text { font-style: italic; font-size: 1.2em; color: #555; }
+
+        /* Content Sections */
+        .travel-entry { border-left: 4px solid #aaa; padding-left: 25px; margin-bottom: 3.5em; background-color: #fcfcfc; padding-top: 1px; padding-bottom: 1px; }
+        .map-wrapper { max-width: 100%; height: auto; display: block; margin: 30px auto; border: 1px solid #ddd; }
+        
+        /* Writing Orientation */
+        .article-link { color: #007bff; text-decoration: none; font-weight: bold; }
+        .article-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+
+<nav>
     <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is a custom HTML site built using Gemini and hosted via Porkbun.</p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#present-travels">Present Travels</a></li>
+            <li><a href="#past-travels">Past Travels</a></li>
+        </ul>
     </div>
+</nav>
+
+<div class="container">
+    <header id="about">
+        <img src="https://i.ibb.co/Xz96n9R/profile-pic-eitan.jpg" alt="Photo of Eitan Feldman" class="profile-pic">
+        <h1>Eitan Feldman</h1>
+        <p class="intro-text">Writer, adventurer, and observer of the world. Chronicling journeys, one landscape and story at a time.</p>
+    </header>
+
+    <main>
+        <section id="present-travels">
+            <h2>Present Travels: The Caucasus</h2>
+            <p>Here you will find reflections and dispatches from my current and most recent expeditions. This is where I process the immediate sensory and narrative impact of my wanderings.</p>
+            
+            <div class="travel-entry">
+                <h3>Reflections on Armenia & Georgia (May-June 2026)</h3>
+                <p>The shared trip across the Caucasus region felt like a convergence of history and hospitality. In Armenia, the ancient monasteries carved into cliffs offered a quiet strength, while Georgia’s vibrant, eclectic energy in Tbilisi was a revelation...</p>
+                <p><a href="https://example.com/eitan86_writing/article_page_example_georgia_armenia.html" class="article-link">Read the full article...</a></p>
+                
+                <div class="map-wrapper">
+                    <img src="https://i.ibb.co/r76K2P4/eitan-feldman-georgia-armenia-map.png" alt="Travel map illustration of Georgia and Armenia" width="600" height="400">
+                </div>
+                
+                <p><em>Check back soon for more writing about the high monasteries, the deep history of both regions, and the specific encounters that marked this trip.</em></p>
+            </div>
+        </section>
+
+        <section id="past-travels">
+            <h2>Past Travels</h2>
+            <p>These are the archived stories of where I have been, the routes I've navigated, and the moments that still resonate.</p>
+            
+            <div class="travel-entry">
+                <h3>Archived Journey Example</h3>
+                <p>A placeholder entry for a future trip description. Here, I will reflect on a past journey, sharing the unique perspective that only hindsight can provide...</p>
+                <p><a href="https://example.com/eitan86_writing/article_page_example_past_trip.html" class="article-link">Read the full article...</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+        <p>&copy; 2026 Eitan Feldman</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
