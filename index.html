@@ -14,17 +14,22 @@
         nav { background: #333; color: #fff; padding: 15px 40px; }
         nav .container { background: transparent; box-shadow: none; padding: 0; }
         nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-around; }
-        nav a { text-color: #fff; text-decoration: none; font-family: sans-serif; font-weight: bold; }
+        nav a { color: #fff; text-decoration: none; font-family: sans-serif; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
 
         /* Profile Header */
         header { text-align: center; margin-bottom: 4em; padding: 60px 0; border-bottom: 1px solid #eee; }
         .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .intro-text { font-style: italic; font-size: 1.2em; color: #555; }
+        .intro-text { font-style: italic; font-size: 1.2em; color: #555; max-width: 600px; margin: 0 auto 2em auto; }
+        
+        /* Featured Image in About Section */
+        .featured-image-wrapper { max-width: 100%; height: auto; margin: 30px auto; text-align: center; }
+        .featured-image-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 
         /* Content Sections */
         .travel-entry { border-left: 4px solid #aaa; padding-left: 25px; margin-bottom: 3.5em; background-color: #fcfcfc; padding-top: 1px; padding-bottom: 1px; }
-        .map-wrapper { max-width: 100%; height: auto; display: block; margin: 30px auto; border: 1px solid #ddd; }
+        .map-wrapper { max-width: 100%; height: auto; display: block; margin: 30px auto; border: 1px solid #ddd; text-align: center; }
+        .map-wrapper img { max-width: 100%; height: auto; display: inline-block; }
         
         /* Writing Orientation */
         .article-link { color: #007bff; text-decoration: none; font-weight: bold; }
@@ -45,9 +50,13 @@
 
 <div class="container">
     <header id="about">
-        <img src="https://i.ibb.co/Xz96n9R/profile-pic-eitan.jpg" alt="Photo of Eitan Feldman" class="profile-pic">
+        <img src="images/profile.jpg" alt="Photo of Eitan Feldman" class="profile-pic">
         <h1>Eitan Feldman</h1>
         <p class="intro-text">Writer, adventurer, and observer of the world. Chronicling journeys, one landscape and story at a time.</p>
+        
+        <div class="featured-image-wrapper">
+            <img src="images/statue-eitan.jpg" alt="Eitan Feldman in front of a monumental statue">
+        </div>
     </header>
 
     <main>
@@ -61,7 +70,7 @@
                 <p><a href="https://example.com/eitan86_writing/article_page_example_georgia_armenia.html" class="article-link">Read the full article...</a></p>
                 
                 <div class="map-wrapper">
-                    <img src="https://i.ibb.co/r76K2P4/eitan-feldman-georgia-armenia-map.png" alt="Travel map illustration of Georgia and Armenia" width="600" height="400">
+                    <img src="images/caucasus-map.png" alt="Travel map illustration of Georgia and Armenia" width="600" height="400">
                 </div>
                 
                 <p><em>Check back soon for more writing about the high monasteries, the deep history of both regions, and the specific encounters that marked this trip.</em></p>
