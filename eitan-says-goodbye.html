@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eitan Says Goodbye - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <h1>Eitan Feldman</h1>
+            <p>Chronicling journeys, one landscape and story at a time.</p>
+        </div>
+        
+        <div class="nav-section-title">Navigation</div>
+        <ul>
+            <li><a href="index.html">← Back to Homepage</a></li>
+        </ul>
+        
+        <div class="nav-section-title">Current Dispatch</div>
+        <ul>
+            <li><a href="index.html#current-travels">The Caucasus (2026)</a></li>
+        </ul>
+
+        <div class="nav-section-title">Archived Writings</div>
+        <ul id="archive-list">
+            <li><a href="lets-go-bagpiping.html">Let's Go Bagpiping</a></li>
+            <li><a href="eating-vegetarian-like-an-indian.html">Eating Vegetarian Like an Indian</a></li>
+            <li><a href="land-of-make-believe-china.html">Land of Make Believe China</a></li>
+            <li><a href="to-lose-a-mother.html">To Lose a Mother</a></li>
+            <li><a href="defense-of-letter-writing.html">Defense of Letter Writing</a></li>
+            <li><a href="thieves-in-the-night.html">Thieves in the Night</a></li>
+            <li><a href="khao-san-road.html">Wonders of Khao San Road</a></li>
+            <li><a href="fun-times-in-boston.html">Fun Times in Boston</a></li>
+            <li><a href="depression-is-shit.html">Depression is Shit</a></li>
+            <li><a href="hong-kong-in-a-day.html">Hong Kong in a Day</a></li>
+            <li><a href="the-lonely-quiet-pleasures-of-insomnia.html">Pleasures of Insomnia</a></li>
+            <li><a href="running-with-the-shadows-of-the-night.html">Shadows of the Night</a></li>
+            <li><a href="craigslist-travelin.html">Craigslist Travelin'</a></li>
+            <li><a href="finally-i-get-some-free-time.html">Finally, Free Time</a></li>
+            <li><a href="brand-new-jetta.html">Brand New Jetta</a></li>
+            <li><a href="what-sugarcane-farming-is-to-me.html">Sugarcane Farming</a></li>
+            <li><a href="eitan-says-goodbye.html" style="color: #fff; font-weight: bold;">Eitan Says Goodbye</a></li>
+            <li><a href="past-trip-reflection.html">Lessons from the Horizon (2024)</a></li>
+            <li><a href="barcelona-reflections.html">Springtime in Catalonia (2026)</a></li>
+            <li><a href="belgium-industry.html">Industrial History in Brussels (2026)</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Eitan Says Goodbye</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">Originally written August 2010</p>
+            
+            <div class="photo-wrapper">
+                <img src="images/eitan-and-gang-phili.jpg" alt="Eitan Feldman and the farm workers in the Philippines" width="700">
+                <div class="photo-caption">Eitan and the gang.</div>
+            </div>
+            
+            <p>Yesterday, I decided to host a farewell lunch for the people I’ve been working with in the fields. I did this primarily because I had seen how hard-pressed and spent they always seemed to be, and how much I wanted them to genuinely enjoy a massive meal without having to immediately rush right back out to labor under the sun. We headed to the local supermarket to stockpile all the supplies, navigating the trip even while being loudly scolded by the farm owner's wife over our logistics. At one point, I flat-out had to tell her to "chill out." We didn't buy anything hyper-luxurious, choosing instead to settle for heavy sandwiches loaded with sweet Filipino spreads, cookies, frozen ice pops, and a massive tray of pasta tossed with sausages and processed cheese.</p>
+            
+            <p>I woke up on Saturday around 7:00 AM to get all the food prepared so it would be ready to serve by 10:00 AM. We began assembling the sandwiches, boiling the water for the pasta, and tackling a dozen minor kitchen tasks to get the feast packed. Around 9:00 AM, I drove out to where the workers live to remind them of the farewell gathering. To my surprise, I found that none of them had actually gone out to the sugarcane sectors to work that morning; they were all waiting inside their respective hamlets, so I had to navigate the communities to round everyone up. Originally, I had pictured a dramatic movie scene—marching out into the dense furrows to rescue my sweaty, exhausted coworkers from their labor and escort them to our meeting place. Instead, I just told the early risers to spread the word, and by 10:00 AM, the crowd began trickling in, many bringing their young sons and daughters along for the food.</p>
+            
+            <p>We unloaded the trays along with twenty liters of soft drinks. The moment I started unlatching the tailgate of the truck, the food vanished into thin air. Three kilograms of pasta, three kilograms of sauce, two kilograms of sausage, five kilograms of local bread, four kilograms of sandwich spread, and an entire bucket of cookies were completely decimated in less than fifteen minutes. Roughly twenty-five people attended, and for a panicked minute during the rush, I genuinely worried we wouldn't have enough to go around. Of course, not all of the food was actually consumed on the premises; I caught several workers systematically stashing full sandwiches and bottles of soda deep into the surrounding bushes so they could carry them home to enjoy with their families later. It was a mad, competitive dash to the table, but I was deeply glad to see that almost everyone walked away with a fair share.</p>
+            
+            <p>After lunch settled, I cleared my throat to deliver a small speech—to offer a sincere thank-you for letting me labor alongside them in the furrows, for welcoming me as a true member of the family, and for showing me the exact boundaries of what my body could accomplish while opening my eyes to their structural hardships. I thanked them thoroughly from the bottom of my heart, and I’m sad to admit that the gravity of the moment made a few of the older workers cry. </p>
+            
+            <p>As a final surprise, I revealed a stack of photo prints I had processed in town—pictures I had quietly been snapping of them since the very first day of my farming endeavors. I had made sure to print at least one distinct portrait for every single person on the crew. We were gathered inside the open-air plantation chapel, so I laid all the glossies out across the wooden benches, instructing everyone to walk around and view the entire exhibition before claiming their own. They were completely amazed at how exceptional they looked on paper, and seeing their faces light up with immediate smiles was incredibly fulfilling. I told them they were free to trade them, mail them to relatives, or keep them forever. They were deeply happy.</p>
+            
+            <p>Once the prints were distributed, I wanted to capture one final memory, so we all grouped together for a massive collective photograph. A few of the women were still visibly weeping, and I felt tears stinging my own eyes as the crowd surged forward to give me a farewell kiss on the cheek and wish me a safe journey back home. Because of the massive height difference, many of them couldn't quite reach my face, delivering awkward, emotional kisses directly onto my neck instead—but I could deeply feel the absolute warmth of their wishes regardless of how clumsy the mechanics were. I threw my arms around everyone, and even the gruff field men stepped up to press their faces to mine in a farewell embrace. It was a bit intense, but I stood there smiling through it all. I said my final goodbyes, and we all dispersed back to our quarters—everyone completely happy and well-fed, if a little bit heavy-hearted.</p>
+            
+            <p>Later that afternoon, after the dust from the event had fully settled, I took a book outside to unwind. Laying flat on the grass right beside the swimming pool, I held the pages up against the glare of the sun. I read peacefully for about half an hour until my eyes caught an entirely bizarre atmospheric phenomenon. High above the book, completely encircling the sun, hung a colossal, perfectly delineated rainbow in the distinct shape of a luminous ring. I had never witnessed a complete, 360-degree circular halo like that in my entire life. I stared up at the sky, absolutely transfixed by how strikingly pretty and awesome it looked floating in the atmosphere. </p>
+            
+            <p>I watched the ring for a solid ten minutes before returning to my room, my mind looping over the mechanics of the halo. When I went inside for dinner, I eagerly described what I had witnessed to the hacienda owner, still riding the high of seeing a complete circular rainbow. He listened, looked at me, and asked where exactly I thought rainbows came from. I immediately launched into a technical explanation, explaining that it was a precise refraction of light—that the ambient humidity and moisture suspended in the air functioned as a giant prism, splitting the white sunlight into its distinct visible spectrum. He burst out laughing, shaking his head and noting how incredibly nerdy I sounded in that moment. </p>
+            
+            <p>He then looked at me seriously and explained that, from his perspective, a rainbow was God's deliberate way of reminding humanity of His permanent presence—a sacred covenant indicating that after the devastation of the Great Flood, He would never punish mankind that way again. I felt myself blush intensely, completely caught off guard by the sudden weight of his words. Standing there with my own religious beliefs still entirely unmapped and undefined, I looked away and thought to myself: *Well, how very curious.*</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
