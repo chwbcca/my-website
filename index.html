@@ -5,44 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eitan Feldman: Travels & Reflections</title>
     <style>
-        /* Global Layout */
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
-        
-        /* Sidebar Navigation */
         .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
         .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
         .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
-        
         .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
         .sidebar ul { list-style: none; padding: 0; margin: 0; }
         .sidebar li { margin-bottom: 12px; }
         .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
         .sidebar a:hover { color: #fff; text-decoration: underline; }
-        
-        /* Main Content Container */
         .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
-        
-        /* Typography & Profile Elements */
         h2, h3 { color: #111; font-weight: normal; margin-top: 1.5em; }
         p { margin-bottom: 1.5em; font-size: 1.1em; }
-        
         .profile-header { text-align: center; margin-bottom: 4em; padding-bottom: 40px; border-bottom: 1px solid #eee; }
         .profile-pic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
-        
         .featured-image-wrapper { max-width: 100%; height: auto; margin: 30px auto; text-align: center; }
         .featured-image-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
-
         .travel-entry { border-left: 3px solid #ddd; padding-left: 25px; margin-bottom: 4em; }
-        
-        /* Photo Display Container */
         .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
         .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
         .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
-        
-        .article-link { color: #007bff; text-decoration: none; font-weight: bold; }
-        .article-link:hover { text-decoration: underline; }
 
-        /* Desktop Mode Layout Shift (Screens wider than 850px) */
         @media (min-width: 850px) {
             body { flex-direction: row; min-height: 100vh; }
             .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
@@ -98,25 +81,20 @@
     </nav>
 
     <main class="main-content">
-        
-        <header class="profile-header" id="about">
+        <header class="profile-header">
             <img src="images/profile.jpg" alt="Photo of Eitan Feldman" class="profile-pic">
             <div class="featured-image-wrapper">
-                <img src="images/statue-eitan.jpg" alt="Eitan Feldman in front of a monumental statue">
+                <img src="images/statue-eitan.jpg" alt="Eitan Feldman">
             </div>
         </header>
 
         <section id="current-travels">
             <h2>Present Travels: The Caucasus</h2>
-            <p>Here you will find reflections and dispatches from my current and most recent expeditions. This is where I process the immediate sensory and narrative impact of my wanderings.</p>
-            
             <div class="travel-entry">
                 <h3>Reflections on Armenia & Georgia (May-June 2026)</h3>
-                <p>The shared trip across the Caucasus region felt like a convergence of history and hospitality. In Armenia, the ancient monasteries carved into cliffs offered a quiet strength, while Georgia’s vibrant, eclectic energy in Tbilisi was a revelation...</p>
-                
+                <p>The shared trip across the Caucasus region felt like a convergence of history and hospitality...</p>
                 <div class="photo-wrapper">
-                    <img src="images/yerevan-cathedral.jpg" alt="Saint Gregory the Illuminator Cathedral in Yerevan, Armenia" width="700">
-                    <div class="photo-caption">The imposing geometry of Saint Gregory the Illuminator Cathedral, Yerevan.</div>
+                    <img src="images/yerevan-cathedral.jpg" alt="Cathedral" width="700">
                 </div>
             </div>
         </section>
@@ -124,8 +102,60 @@
         <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
             <p>&copy; 2026 Eitan Feldman</p>
         </footer>
-
     </main>
-
 </body>
 </html>
+
+### 2. How to update the individual stories
+Since this is a static site, you must update the sidebar in **every one of the 24 `.html` files** manually. 
+
+**The Shortcut:**
+Open every story file (like `lets-go-bagpiping.html`) and replace everything between `<nav class="sidebar">` and `</nav>` with this master block:
+
+```html
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <h1>Eitan Feldman</h1>
+            <p>Chronicling journeys, one landscape and story at a time.</p>
+        </div>
+        
+        <div class="nav-section-title">Navigation</div>
+        <ul>
+            <li><a href="index.html">← Back to Homepage</a></li>
+        </ul>
+        
+        <div class="nav-section-title">Current Dispatch</div>
+        <ul>
+            <li><a href="index.html#current-travels">The Caucasus (2026)</a></li>
+        </ul>
+
+        <div class="nav-section-title">Archived Writings</div>
+        <ul id="archive-list">
+            <li><a href="lets-go-bagpiping.html">Let's Go Bagpiping</a></li>
+            <li><a href="eating-vegetarian-like-an-indian.html">Eating Vegetarian Like an Indian</a></li>
+            <li><a href="land-of-make-believe-china.html">Land of Make Believe China</a></li>
+            <li><a href="to-lose-a-mother.html">To Lose a Mother</a></li>
+            <li><a href="defense-of-letter-writing.html">Defense of Letter Writing</a></li>
+            <li><a href="thieves-in-the-night.html">Thieves in the Night</a></li>
+            <li><a href="khao-san-road.html">Wonders of Khao San Road</a></li>
+            <li><a href="fun-times-in-boston.html">Fun Times in Boston</a></li>
+            <li><a href="depression-is-shit.html">Depression is Shit</a></li>
+            <li><a href="hong-kong-in-a-day.html">Hong Kong in a Day</a></li>
+            <li><a href="the-lonely-quiet-pleasures-of-insomnia.html">Pleasures of Insomnia</a></li>
+            <li><a href="running-with-the-shadows-of-the-night.html">Shadows of the Night</a></li>
+            <li><a href="craigslist-travelin.html">Craigslist Travelin'</a></li>
+            <li><a href="finally-i-get-some-free-time.html">Finally, Free Time</a></li>
+            <li><a href="brand-new-jetta.html">Brand New Jetta</a></li>
+            <li><a href="what-sugarcane-farming-is-to-me.html">Sugarcane Farming</a></li>
+            <li><a href="eitan-says-goodbye.html">Eitan Says Goodbye</a></li>
+            <li><a href="tips-for-entering-the-monster.html">Entering the Monster</a></li>
+            <li><a href="eitan-and-the-magic-elbow.html">The Magic Elbow</a></li>
+            <li><a href="the-faces-of-food.html">The Faces of Food</a></li>
+            <li><a href="talk-about-sea-monkeys.html">Talk about Sea Monkeys</a></li>
+            <li><a href="we-get-caught-in-the-rain.html">Caught in the Rain</a></li>
+            <li><a href="the-crabs-incident.html">The Crabs Incident</a></li>
+            <li><a href="eitan-on-strength.html">Eitan on Strength</a></li>
+        </ul>
+    </nav>
+
+Your updated digital anthology presentation and website code are ready! Feel free to take a look and let me know if you'd like to make any other adjustments.
