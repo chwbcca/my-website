@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eitan's Got a Brand New Jetta - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        ul.specs { font-size: 1.1em; margin-bottom: 1.5em; padding-left: 20px; }
+        ul.specs li { margin-bottom: 0.5rem; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <h1>Eitan Feldman</h1>
+            <p>Chronicling journeys, one landscape and story at a time.</p>
+        </div>
+        
+        <div class="nav-section-title">Navigation</div>
+        <ul>
+            <li><a href="index.html">← Back to Homepage</a></li>
+        </ul>
+        
+        <div class="nav-section-title">Current Dispatch</div>
+        <ul>
+            <li><a href="index.html#current-travels">The Caucasus (2026)</a></li>
+        </ul>
+
+        <div class="nav-section-title">Archived Writings</div>
+        <ul id="archive-list">
+            <li><a href="lets-go-bagpiping.html">Let's Go Bagpiping</a></li>
+            <li><a href="eating-vegetarian-like-an-indian.html">Eating Vegetarian Like an Indian</a></li>
+            <li><a href="land-of-make-believe-china.html">Land of Make Believe China</a></li>
+            <li><a href="to-lose-a-mother.html">To Lose a Mother</a></li>
+            <li><a href="defense-of-letter-writing.html">Defense of Letter Writing</a></li>
+            <li><a href="thieves-in-the-night.html">Thieves in the Night</a></li>
+            <li><a href="khao-san-road.html">Wonders of Khao San Road</a></li>
+            <li><a href="fun-times-in-boston.html">Fun Times in Boston</a></li>
+            <li><a href="depression-is-shit.html">Depression is Shit</a></li>
+            <li><a href="hong-kong-in-a-day.html">Hong Kong in a Day</a></li>
+            <li><a href="the-lonely-quiet-pleasures-of-insomnia.html">Pleasures of Insomnia</a></li>
+            <li><a href="running-with-the-shadows-of-the-night.html">Shadows of the Night</a></li>
+            <li><a href="craigslist-travelin.html">Craigslist Travelin'</a></li>
+            <li><a href="finally-i-get-some-free-time.html">Finally, Free Time</a></li>
+            <li><a href="brand-new-jetta.html" style="color: #fff; font-weight: bold;">Brand New Jetta</a></li>
+            <li><a href="past-trip-reflection.html">Lessons from the Horizon (2024)</a></li>
+            <li><a href="barcelona-reflections.html">Springtime in Catalonia (2026)</a></li>
+            <li><a href="belgium-industry.html">Industrial History in Brussels (2026)</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Eitan's Got a Brand New Jetta</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">Originally written September 2010</p>
+            
+            <div class="photo-wrapper">
+                <img src="images/jetta-gli-1.jpg" alt="Eitan's 2002 red Volkswagen Jetta GLI" width="700">
+                <div class="photo-caption">The new project: a 2002 Volkswagen Jetta GLI.</div>
+            </div>
+            
+            <p>I just rolled back into town early this morning, right around 3:00 AM, after a long haul from Arnold, Missouri. The flight out there was easily the bumpiest, most turbulent plane ride I have ever endured, leaving me a tad terrified. Fortunately, I sat next to a fellow named Paul who splits his time working as a policeman and a financial analyst while managing a private security firm in St. Louis. Conversing with him was incredibly fascinating, though I couldn't quite bring myself to reveal that the car I was about to drive back up from Missouri to Minnesota wasn't going to be completely kosher paperwork-wise—not to mention that I just discovered my insurance policy currently lists my name as "Eitan Seleman." </p>
+            
+            <p>Why on earth fly all the way down to Missouri just to track down a Volkswagen? I did it for the raw open drive, for the bargain price, for the adventure, and for the chance to cross landscape lines I had never laid eyes on before. But above all, I did it for the car itself.</p>
+            
+            <p>Here is exactly what I just bought:</p>
+            <ul class="specs">
+                <li>2002 Volkswagen Jetta GLI</li>
+                <li>69,000 original miles</li>
+                <li>24-valve 6-cylinder VR6 engine</li>
+                <li>6-speed fully synchronized manual transmission</li>
+                <li>Deep bolster sports seats, tuned sport suspension, and ESP (Electronic Stability Protection)</li>
+                <li>Bright RED!</li>
+            </ul>
+            
+            <p>But there is a slight catch: it needs some serious love. The issues are purely cosmetic, and realistically, I could cruise around exactly as it sits right now for a long time without any mechanical worry—but I absolutely won't leave it that way.</p>
+            
+            <p>I hammered out the drive between 4:00 PM yesterday and 3:00 AM this morning, cutting through several cool small towns along the route. I made brief stops in Hannibal, Mt. Pleasant, and Iowa City. Along the way, I crossed paths with a state trooper, met a specialized VW tech, encountered a few deer that had previously been turned into roadside burger meat, stopped at a diner named Jenny's where the menu is 98% deep-fried, chatted with a guy from Oshkosh, and navigated past a massive, catastrophic wreck on the interstate. Miraculously, I managed not to get pulled over a single time.</p>
+            
+            <div class="photo-wrapper">
+                <img src="images/jetta-gli-2.jpg" alt="Detail view of the red Jetta GLI" width="700">
+                <div class="photo-caption">Cosmetic details that need sorting out over the semester.</div>
+            </div>
+
+            <p>But it was a difficult, grueling drive—partly because I was completely unfamiliar with the car’s quirks, and partly because the stretch was simply too long without enough restorative stops to stay completely sharp. The chassis shook rhythmically at highway speeds due to the wind turbulence catching a missing chunk of the front bumper. The power steering pump was growling angrily at me through every turn, the driver’s side window refused to seal properly for a 300-mile stretch, and I spent the first few counties struggling to locate where sixth gear lived on the shifter gate, though I sorted it out in the long run. </p>
+            
+            <p>Driving for that many consecutive hours under the highway lights eventually hypnotizes your brain, making concentration an uphill battle. The darkness started playing tricks on my eyes; I began hallucinating giant shifting shadows on the shoulder, patrol cars tucked into medians that weren't actually there, and phantom curves that led nowhere. I was incredibly lucky a state trooper eventually showed up ahead of me near the end of the line, because his roof lights forced me to slow down right before a massive, fresh rollover accident on I-35. I almost didn't spot the flipped GMC Envoy resting on its roof, much like I hadn't spotted the pulverized deer on the asphalt moments earlier. I guess those are the stakes you accept when you choose to drive through the dead of night.</p>
+            
+            <p>During my final stop at a rural gas station, I was instantly assaulted by a miniature white dog—no joke—who barked furiously at my shins, accompanied by a guy who had just rolled out of bed to handle his early newspaper delivery route. He looked over, nodded, and told me he really liked the lines of the Jetta. I looked back and told him he carried a terrifyingly aggressive dog for its physical size. He laughed, drove off into the darkness toward the cornfields, and I pulled back onto the interstate layout.</p>
+            
+            <p>Outside of those midnight bottlenecks, the car is fast and incredibly cool. I was averaging 80 mph, exploring the vehicle’s amenities along the way. It features an excellent factory stereo system with six speakers, an open sunroof, cruise control, and an array of fun console buttons that I kept pressing. This is easily the most bells and whistles I have ever possessed in a vehicle, and amazingly, almost all of them work perfectly.</p>
+            
+            <p>Now that I am back on campus and hoping to carve out some rare free time this semester, I will be directing my energy toward restoring this Jetta to pristine aesthetic condition. I don't think I'll touch a single bolt on the engine block, simply because the VR6 already puts out way too much power for the street. This is my definitive new project.</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
