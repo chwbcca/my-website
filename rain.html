@@ -1,0 +1,65 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Rain</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Originally written July 10, 2010 • Uploaded to Facebook on Jul 10, 2010, 6:55 AM
+            </p>
+            
+            <p>I used to hold a grudge against the rain. When you lack a vehicle and have nowhere to hide, being caught in a downpour is genuinely shit—it soaks your clothes, chills your bones, and ruins your day. But life here has flipped my perspective.</p>
+            
+            <p>We have just finished planting thousands of seeds across the sectors, and suddenly, the gray skies are no longer a nuisance. Now, I find myself standing on the porch, scanning the horizon, and praying for the clouds to break open and bring a little more rain.</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
