@@ -1,0 +1,89 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on the Hacienda - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Life on the Hacienda</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Originally written July 2010 • Uploaded to Facebook on Jul 7, 2010, 8:24 AM
+            </p>
+            
+            <div class="photo-wrapper">
+                <img src="images/eitan-fields.jpg" alt="Eitan Feldman working in the fields of Negros" width="700">
+                <div class="photo-caption">Working the land on the hacienda.</div>
+            </div>
+            
+            <p>I live in paradise. I couldn't ask for much more. I’m currently on the island of Negros in the Philippines, staying in a cool guestroom in a house built in the 1960s. My hosts are the owners of the plantation where I work, and life here comes with a swimming pool, plenty of mosquitoes, and an army of service staff. The current owners are the fifth generation of sugar growers, and many of the dishes I eat here are just as old as the family tradition. I’ve spoken to my host, who manages more than 80 hectares of land. He wants to manage more, but there are complex social issues deeply connected to sugarcane farming that he is trying to navigate effectively.</p>
+            
+            <p>I live in a place perfectly positioned between a beautiful mountain range that glows when the sun comes up and the sea on the other side, where the sun goes down. The plantation includes the beach, though sadly, I can’t swim there right now; the waters are currently thick with black jellyfish.</p>
+
+            <p>My work starts early. The people here are incredibly friendly. I don't speak Tagalog or Ilonggo (the local dialect) very well, though a few words are similar to Spanish—days of the week and numbers are easy, but everything else is few and far between. It was hilarious my first day of work: I asked a farmhand for a ride to the fields, only to realize the "field" was about a two-minute walk away. It was more than a little embarrassing to show up on a motorcycle when most of the people I work with don't even have the means to buy their own groceries. </p>
+
+            <p>Many of them are missing teeth, yet they are full of joy. They constantly ask about my height, my shoe size, if I play basketball, where my girlfriend is, and where I’m from. They also ask about my lunch, and take great pleasure in sharing with me—most of the time, they finish it all. I have no complaints.</p>
+
+            <p>I live near the "Big House," a massive, unique home built in the 1930s that belongs to the plantation owner’s uncle, who is a priest. It has soaring ceilings and about six rooms. It even features a hidden staircase leading to the roof, where the view is spectacular. The interior is filled with original 1930s furniture made from Filipino hardwoods, matching the rich floors. Even with temperatures soaring above 30°C, the house stays remarkably cool.</p>
+            
+            <p>I am based in Manapla, tucked between Victorias and the surrounding plantations. While this specific farm doesn't have a sugar mill, we sell most of our cane to the mills nearby. My work is hands-on. Today, I helped create fertilizer using a mixture of old cane fibers, organic household waste, carabao (water buffalo) manure, burnt molasses, and plenty of worms. The end product is a rich, black mixture we work into the ground before planting.</p>
+            
+            <p>We work from 6:00 AM to 10:00 AM, break, and return around 1:00 PM. It is brutal work—there is zero shade, and we cover ourselves head-to-toe to survive the desert-like heat. My coworkers laughed at me on my first day when I showed up in a t-shirt and shorts. They convinced me to adopt the uniform: long pants, long sleeves, gloves, and a cap. I’m glad they did; between the sun, the massive spiders, the frogs, and the slithering things in the fields, it’s a necessary armor.</p>
+
+            <p>We are also accompanied by <em>carabao</em>. These massive water buffalo are twice the size of a cow with impressive horns. They are generally friendly, though they are always led by their noses. They are our workhorses, and honestly, I think they enjoy the work—mostly because they love the taste of the sugarcane.</p>
+
+            <p>I am happy working with my fellow field hands: Romulus (the overseer—I appreciate the irony), Elvis, Jayboy, Jay, Tito Calvo, and so many others. We struggle to communicate, but we get by. The plantation owner is currently putting the finishing touches on a movie about the sugarcane industry in Negros. I saw a preview—it’s very sentimentally charged and highlights the current limitations of the industry. Maybe we'll post it online soon. We are scheduled to film more footage, and I’m hoping to be part of it!</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
