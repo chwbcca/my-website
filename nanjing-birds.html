@@ -1,0 +1,81 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The People that Walk their Birds - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">These are the People that Walk their Birds</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Originally written April 2010 • Uploaded to Facebook on Apr 1, 2010, 11:56 PM
+            </p>
+            
+            <div class="photo-wrapper">
+                <img src="images/nanjing-birds.jpg" alt="Birdcages hanging from trees in a public park in Nanjing" width="700">
+                <div class="photo-caption">Encountering the avian counterculture along the avenue.</div>
+            </div>
+            
+            <p>In Nanjing, it rains. It rains significantly more than I was originally hoping for. There are days when I genuinely think I’ve mistakenly landed in England rather than China, as the weather can remain completely awful for weeks at a time. But then, the sun breaks through! People immediately bare their shoulders, stubbornly keep their ugly sweaters on, and collectively decide to step outside.</p>
+            
+            <p>Once out on the pavement, the city's favorite recreational activities include hawking massive loogies, smoking copiously, riding bicycles at an absolute snail's pace, and walking their birds. You would naturally expect people to walk their dogs, or perhaps even their cats—and they do—but their birds? There is an entire, distinct counterculture of people walking their birds here, and if you open your eyes, you will quickly notice exactly how their system operates.</p>
+            
+            <p>These citizens navigate the streets carrying small, ornate cages housing one or two little birds. The plumage spans from your standard canary yellow to brilliant green, and muted brown with sharp orange beaks. Some of these birds talk, some of them eat, sleep, and defecate all in one swift, continuous motion, and others just hang there on the perch. It is remarkably cute and endearing. Owners walk the block with the cages dangling casually from their hands. When two practitioners cross paths, they approach one another, trade hellos, and let their respective cages approximate—allowing the birds to inspect each other much like dogs smelling one another on a leash. They will wave a slow goodbye, comment on how pleasant the weather is, and wander away.</p>
+            
+            <p>Then, once they grow tired of carrying the weight, they will sit on park benches and chill while their cages are suspended from old, rusty nails conveniently hammered into the trunks of the trees around them. These birds, relaxing under precarious conditions on rusty metal in old bark, produce the most beautiful music when the weather behaves. For me, this avian display provides a highly relaxing perspective on life. It also offers the deeply reassuring thought that if these tiny creatures are still breathing, the urban air pollution can’t possibly be that fatal, right?</p>
+            
+            <p>These small birds being paraded around in their wire enclosures vividly remind me of historic eras when miners would descend into the deep shafts with their canaries to ensure carbon monoxide levels were structurally safe. These birds, these people, the ugly sweaters, the heavy pollution—it is all strangely comforting. Though, I do wonder what happens if the bird suddenly dies? Do the owners panic? Do they assume that they, too, will die soon? Do they immediately pack up and move to another country? Where on earth would you even go from here? Iceland?</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
