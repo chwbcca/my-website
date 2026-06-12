@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eitan Feldman - Chronicling Journeys</title>
     <style>
-        /* Global Layout Layout */
+        /* Global Layout */
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
         
         /* Sidebar Navigation */
@@ -27,6 +27,11 @@
         h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
         p { margin-bottom: 1.5em; font-size: 1.1em; }
         
+        /* Photo Grid Layout */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
         /* Desktop Layout Shift */
         @media (min-width: 850px) {
             body { flex-direction: row; min-height: 100vh; }
@@ -49,9 +54,21 @@
             <p>Welcome to my personal archive of travel writing, landscape reflections, and compiled journals. This space serves as a continuous record of the places I've navigated, the people I've met, and the moments that left an impression—from early transitions to recent global journeys.</p>
             
             <p>Use the chronological index in the sidebar menu to explore stories spanning across different years, landscapes, and chapters.</p>
+
+            <h2 style="font-size: 1.8em; margin-top: 2em; margin-bottom: 10px;">Featured Landscapes</h2>
+            
+            <div class="photo-wrapper">
+                <img src="images/estrella.jpg" alt="A nostalgic landscape from the travel archive" width="700">
+                <div class="photo-caption">Tracing steps through remembered borders.</div>
+            </div>
+
+            <div class="photo-wrapper">
+                <img src="images/cathedral-yerevan.jpg" alt="St. Gregory the Illuminator Cathedral in Yerevan, Armenia" width="700">
+                <div class="photo-caption">The striking modern forms of the Cathedral in Yerevan, Armenia.</div>
+            </div>
         </article>
 
-        <footer style="margin-top: 8em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+        <footer style="margin-top: 6em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
             <p>&copy; 2026 Eitan Feldman</p>
         </footer>
 
