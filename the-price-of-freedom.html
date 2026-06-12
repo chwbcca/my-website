@@ -1,0 +1,83 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Price of Freedom - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">The Price of Freedom</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Reflections on an event from circa 2003 • Penned in 2026
+            </p>
+            
+            <div class="photo-wrapper">
+                <img src="images/the-price-of-freedom.jpg" alt="An atmospheric look at a lone public transit point or station at night" width="700">
+                <div class="photo-caption">Confronting a complicated history at 3:00 AM.</div>
+            </div>
+            
+            <p>There was only one phone in town. Or perhaps it was simply the only public phone available. It was hooked up to a loud speaker that would blare your name across the area whenever an incoming call arrived, summoning you to come answer it.</p>
+            
+            <p>He was locked inside a cage no larger than a dog kennel. They had kept him trapped there all afternoon and deep into the early morning. When I finally arrived at 3:00 AM, the guards told me I had to go track down the boss at his private residence and wake him up; he was the only one with the authority to let him out. We had to hail a cab to his house, rouse him from his sleep, and explain the situation: <em>“Hey, my friend is in a pen. They nabbed him yesterday. I don’t know what else to do.”</em> He smiled back at me—the distinct, knowing smile of a man who understands exactly how to negotiate a bribe.</p>
+            
+            <p>We returned to the small police station where they were holding him. The officer reached into an old cabinet and pulled out the offending article: a single spliff tucked inside a cigarette box. I feigned absolute disgust. He looked at me and stated that the official fine would be 1,000 pesos. It was practically every last cent I had left in the world. I had never imagined that this was what my money would eventually buy—my friend’s literal freedom.</p>Origin
+
+            <p>The entire layout was desperate. Seeing him crammed into that horrible, tiny cage was profoundly sad. And yet, this was the same person who had spent years torturing me. He had consistently made fun of me, obliterated my dreams, and guffawed at my expense in front of all my friends. He had beaten me up, stolen from me, and constantly put me down. But standing there looking through the bars, not once did it cross my mind to laugh at his misfortune. So, I paid the man, and the policemen finally released him from that wretched little cage.</p>
+
+            <p>There was someone else trapped in the station that night—a man who was clearly drunk and desperately begging for assistance. He looked at me and asked me to help him, too, but I never did.</p>
+
+            <p>We finally made our way back to our campsite-cum-hotel setup. He went straight to bed without uttering a single word, probably cuddling up immediately to his girlfriend at the time. He didn’t say thank you, or even offer a basic <em>“Hey, I appreciate what you did.”</em> In fact, he didn’t say thank you for ten long years, and even then, it was only because I explicitly asked him for it. I am certain that if I hadn't stepped in to bail him out, he would have found another way to survive—after all, it was his girlfriend who had initially woken me up so I could go help. He always possessed a distinct knack for getting others to do his heavy lifting. But even if he had treated me a thousand times worse than he did, I know I still would have saved him.</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
