@@ -1,0 +1,89 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosher Cakes - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Kosher Cakes</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Reflections on a journey up the coast • Penned in 2026
+            </p>
+            
+            <p>During the weird, unsettling peak of COVID, I was living in Mexico City. I hadn't necessarily planned to stay long-term, but I had my dog with me, and the global lockdown was declared exactly one week after I arrived. Before crossing the border, I had grown completely sick and tired of the United States. I had been living in Texas under the Trump regime, grinding through a miserable, two-year probation period during which I was mostly unemployed and crashing at my uncle's place. So it was that I spent that first strange year of the pandemic in Mexico, navigating all sorts of existential weirdness, occupying a noisy two-bedroom apartment with a roommate who was thankfully never around, and trying to figure my life out.</p>
+            
+            <p>While the world was shutting down, I went through chemotherapy with my dog, who had been diagnosed with lymphatic cancer. We fought the disease relentlessly for eight long months, only for the battle to end swiftly when the medications finally stopped working. I desperately wanted out. I didn't want to be in Mexico anymore, where the lines for medical oxygen tanks stretched entirely around the block. Where I couldn't secure basic medications for my dog through legal channels and was forced to source them on the black market. Where my aunt passed away, and where our close friend passed away. I just wanted out.</p>
+
+            <p>During the pandemic, my brother had a baby—a wonderful child full of energy, wonder, and mischief. She is truly something. I desperately wanted to meet her and rekindle my relationship with my brother. So, the absolute moment the vaccine became available, I high-tailed it back to Texas to get my shots and prepare for a massive road trip up to Baltimore to see my brother, his wife, and their new baby.</p>
+
+            <div class="photo-wrapper">
+                <img src="images/kosher-cakes.jpg" alt="A meaningful travel photo reflecting the weight of the journey" width="700">
+                <div class="photo-caption">Running away from all sorts of weirdness, looking for a harbor.</div>
+            </div>
+
+            <p>The journey initiated quite well. I had just received a stimulus check from the government and was gifted a beat-up old minivan that my friends and I humorously dubbed <em>“La Homera”</em>—mostly because it was a Honda Odyssey. I completely stripped out the interior layout and built a makeshift bedroom setup in the back with help from my buddies. As it turned out, I would never actually sleep a single night inside it, but it was a great romantic concept. My itinerary was designed to take me from Texas, east through Louisiana, up into the Carolinas, and finally straight into Baltimore.</p>
+            
+            <p>But this isn't a story about the logistics of a road trip. It is a story about how I was thoroughly fooled by a digital algorithm.</p>
+            
+            <p>You see, I wasn't just traveling to meet my new family; I was traveling because I was running away from all sorts of unresolved trauma that had accumulated during COVID, including the painful collapse of a close friendship. And if you travel completely alone for long enough, a profound loneliness begins to settle in.</p>
+            
+            <p>The absolute moment I rolled into Baltimore and met up with my brother, he proudly announced that he had prepared a batch of homemade crab cakes, which he promised were going to be unbelievable. Right as he said it, my phone buzzed with a notification. The dating app layout informed me that I had just matched with a female rabbi who was apparently dying to meet me.</p>
+            
+            <p>So, what did I do? I looked at him and asked, <em>“Can these crab cakes wait? There’s a rabbi down the street who is dying to meet me.”</em></p>
+            
+            <p>I immediately left the house to meet her for a quick dinner, and the date went absolutely nowhere. What <em>did</em> go somewhere, however, was a sinking, heavy feeling in my gut that I had deeply offended my brother by choosing a fleeting algorithm over his home cooking. We did eventually eat his crab cakes the following afternoon, and they were truly fantastic. I never heard back from the rabbi.</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
