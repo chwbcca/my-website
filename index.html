@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eitan Feldman - Chronicling Journeys</title>
+    <title>Eitan Feldman: Travels & Reflections</title>
     <style>
         /* Global Layout */
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
@@ -24,15 +24,24 @@
         /* Main Content Container */
         .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
         
-        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        /* Typography & Profile Elements */
+        h2, h3 { color: #111; font-weight: normal; margin-top: 1.5em; }
         p { margin-bottom: 1.5em; font-size: 1.1em; }
         
-        /* Photo Grid Layout */
+        .profile-header { text-align: center; margin-bottom: 4em; padding-bottom: 40px; border-bottom: 1px solid #eee; }
+        .profile-pic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
+        
+        .featured-image-wrapper { max-width: 100%; height: auto; margin: 30px auto; text-align: center; }
+        .featured-image-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+
+        .memory-entry { border-left: 3px solid #ddd; padding-left: 25px; margin-bottom: 4em; }
+        
+        /* Photo Display Container */
         .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
-        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba-0,0,0,0.05); display: inline-block; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
         .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
 
-        /* Desktop Layout Shift */
+        /* Desktop Mode Layout Shift (Screens wider than 850px) */
         @media (min-width: 850px) {
             body { flex-direction: row; min-height: 100vh; }
             .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
@@ -48,5 +57,47 @@
 
     <main class="main-content">
         
-        <article style="padding-top: 10px;">
-            <h2 style="font-size: 2.5em; margin-bottom:
+        <header class="profile-header" id="about">
+            <img src="images/profile.jpg" alt="Photo of Eitan Feldman" class="profile-pic">
+            <div class="featured-image-wrapper">
+                <img src="images/statue-eitan.jpg" alt="Eitan Feldman in front of a monumental statue">
+            </div>
+        </header>
+
+        <section id="macalester-theater">
+            <h2>Macalester Recalls: The Theater Crew</h2>
+            <p>Collaborations on the stage and behind the scenes. This archive serves as a repository for the creative intersections, puppet projects, and lasting connections built during my time at Macalester College.</p>
+            
+            <div class="memory-entry">
+                <h3>Backstage Peers & Creative Connections</h3>
+                <p>Looking back at the long rehearsals, late-night production adjustments, and shared creative energy that defined our theater circle. These moments of collective design remain a cornerstone of my time on campus.</p>
+                
+                <div class="photo-wrapper">
+                    <img src="images/eitan-theater.jpg" alt="Eitan Feldman and theater peers at Macalester College" width="700">
+                    <div class="photo-caption">A gathering with theater colleagues on the Macalester stage.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="yerevan-travels">
+            <h2>Yerevan Travels</h2>
+            <p>Reflections on the architecture and atmosphere of the city.</p>
+            
+            <div class="memory-entry">
+                <h3>The Cathedral</h3>
+                <p>Taking in the stunning design and historical presence of the cathedral.</p>
+                
+                <div class="photo-wrapper">
+                    <img src="images/cathedral-yerevan.jpg" alt="Cathedral in Yerevan" width="700">
+                    <div class="photo-caption">A view of the beautiful cathedral in Yerevan.</div>
+                </div>
+            </div>
+        </section>
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
