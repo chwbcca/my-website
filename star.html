@@ -1,0 +1,81 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star - Eitan Feldman</title>
+    <style>
+        /* Global Layout */
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background-color: #fafafa; display: flex; flex-direction: column; }
+        
+        /* Sidebar Navigation */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 30px; box-sizing: border-box; }
+        .sidebar-brand h1 { font-size: 1.8em; margin: 0 0 10px 0; font-weight: normal; font-family: 'Georgia', serif; }
+        .sidebar-brand p { font-style: italic; font-size: 0.95em; color: #aaa; margin: 0 0 30px 0; line-height: 1.5; }
+        
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 25px 0 10px 0; font-weight: bold; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin-bottom: 12px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: auto; padding: 40px 20px; box-sizing: border-box; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        
+        h2 { color: #111; font-weight: normal; margin-top: 1.5em; }
+        p { margin-bottom: 1.5em; font-size: 1.1em; }
+        
+        /* Photo Display Container */
+        .photo-wrapper { max-width: 100%; height: auto; display: block; margin: 35px auto; text-align: center; }
+        .photo-wrapper img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: inline-block; }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 10px; font-style: italic; }
+
+        /* Desktop Layout Shift */
+        @media (min-width: 850px) {
+            body { flex-direction: row; min-height: 100vh; }
+            .sidebar { width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        
+        <article style="padding-top: 10px;">
+            <h2 style="font-size: 2.3em; margin-bottom: 5px;">Star</h2>
+            <p style="font-style: italic; color: #777; font-family: sans-serif; font-size: 0.9em; margin-bottom: 2.5em;">
+                Reflections on an event from circa 1999 • Penned in 2026
+            </p>
+            
+            <div class="photo-wrapper">
+                <img src="images/estrella.jpg" alt="A nostalgic reflection on youth and memory" width="700">
+                <div class="photo-caption">Waking up to the early rhythms of hangovers and pipe tunes.</div>
+            </div>
+            
+            <p>You know who’s lucky? Imagine your first kiss being with a girl named Star. Imagine being the first one in your entire friend group to lock down that milestone. Or maybe the second. Ha.</p>
+            
+            <p>It happens because this is your very first real party. Your friend’s mom casually bought a mountain of alcohol for everyone, leaving you intensely curious as to why a thirteen-year-old’s birthday party includes literal cartons of 40oz beers. Out of nowhere, Star walks up, pins you flat against the wall, and looks you in the eye: <em>“Have you ever been kissed?”</em> You manage to mumble a no, and she just slams a full French kiss on you right then and there. You are halfway into a 40—your first 40oz ever—and your brain is short-circuiting: <em>Wow. Why on earth am I spending all my time reading books and doing homework when I could be doing this instead?</em></p>
+            
+            <p>And it isn't just a solitary kiss; it’s like three or four. There’s tongue, a bit of caressing, and your mind completely leaves your body. But here’s the catch: she has a mean boyfriend. A total asshole who treats her horribly. She hangs around the periphery of your friend group, except she is five years older than you. Still, she kisses you, and you walk away feeling like life is suddenly going to be a lot easier from here on out.</p>
+
+            <p>The next time you see her is at another party, and she’s standing there with the boyfriend—who now knows she kissed you. Never mind the fact that he’s twenty or something, definitely way bigger, way older, and absolutely not wiser. He looks ready to kill you. So, what do you do? Magically, a savior appears out of the crowd, offers you an immediate ride home, and casually tells you, <em>“Kid, you’re cool.”</em></p>
+
+            <p>You never see Star again after that night, but you walk into school the next Monday as an absolute hero. Of course, that’s after you’ve endured your first real hangover. And after you’ve hosted a house full of friends for a sleepover, only to blast them awake at the crack of dawn with live bagpipe music because you had a pipe band concert that morning and absolutely had to warm up the reeds. Come to think of it, it was probably their first hangovers, too.</p>
+
+        </article>
+
+        <footer style="margin-top: 5em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.9em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; 2026 Eitan Feldman</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
