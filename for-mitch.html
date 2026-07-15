@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mitch</title>
+    <style>
+        /* Base reset and layout */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0dbd5;
+            font-family: "Georgia", "Times New Roman", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Header metadata */
+        header {
+            margin-bottom: 3.5rem;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #a39c93;
+            margin-bottom: 0.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .line-accent {
+            width: 40px;
+            height: 1px;
+            background-color: #a39c93;
+            opacity: 0.5;
+            margin-top: 1rem;
+        }
+
+        /* Poem styling */
+        .poem {
+            font-size: 1.25rem;
+            color: #eef1f6;
+            font-style: italic;
+        }
+
+        .stanza {
+            margin-bottom: 2rem;
+        }
+
+        .stanza:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Subtle footer for context or return link */
+        footer {
+            margin-top: 4.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.85rem;
+            color: #706a64;
+            letter-spacing: 0.05em;
+        }
+
+        footer a {
+            color: #a39c93;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        footer a:hover {
+            color: #eef1f6;
+            border-bottom: 1px solid #eef1f6;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            body {
+                padding: 30px 15px;
+            }
+            .poem {
+                font-size: 1.15rem;
+                line-height: 1.7;
+            }
+            header {
+                margin-bottom: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>For Mitch</h1>
+            <div class="line-accent"></div>
+        </header>
+
+        <main class="poem">
+            <div class="stanza">
+                Where did you go?<br>
+                Why did you leave us so soon,<br>
+                With your fantastic smile and your unbreakable charm?
+            </div>
+
+            <div class="stanza">
+                Did you break under the needle?<br>
+                Did you pull the trigger?
+            </div>
+
+            <div class="stanza">
+                We had to go at the same time.<br>
+                You went to a darker place.<br>
+                I came out again.
+            </div>
+
+            <div class="stanza">
+                We haven’t seen you since.<br>
+                Why did you have to go?
+            </div>
+        </main>
+
+        <footer>
+            <p><a href="/">← Return to Home</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
