@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "Eitan Feldman: Travels & Reflections" }}</title>
+    <style>
+        /* Base Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; background-color: #fafafa; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Mobile Header / Navigation Toggle */
+        .mobile-header { display: flex; justify-content: space-between; align-items: center; background: #1a1a1a; color: #fff; padding: 15px 20px; font-family: sans-serif; }
+        .mobile-header h1 { font-size: 1.1em; font-weight: normal; margin: 0; }
+        .nav-toggle { background: none; border: 1px solid #555; color: #fff; padding: 6px 12px; border-radius: 4px; font-size: 0.9em; cursor: pointer; }
+        
+        /* Sidebar Styling */
+        .sidebar { background: #1a1a1a; color: #fff; width: 100%; padding: 25px 20px; box-sizing: border-box; display: none; }
+        .sidebar.active { display: block; }
+        .sidebar-brand h1 { font-size: 1.6em; margin-bottom: 8px; font-weight: normal; }
+        .sidebar-brand p { font-style: italic; font-size: 0.9em; color: #aaa; margin-bottom: 25px; line-height: 1.4; }
+        .nav-section-title { font-family: sans-serif; text-transform: uppercase; font-size: 0.75em; letter-spacing: 2px; color: #777; margin: 20px 0 10px; font-weight: bold; }
+        .sidebar ul { list-style: none; }
+        .sidebar li { margin-bottom: 10px; }
+        .sidebar a { color: #ccc; text-decoration: none; font-family: sans-serif; font-size: 0.95em; transition: color 0.2s; }
+        .sidebar a:hover { color: #fff; text-decoration: underline; }
+
+        /* Main Content Container */
+        .main-content { max-width: 800px; width: 100%; margin: 0 auto; padding: 25px 15px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.02); flex: 1; }
+        
+        /* Typography & Images */
+        h1, h2, h3 { color: #111; font-weight: normal; margin-top: 1.2em; margin-bottom: 0.5em; }
+        h1 { font-size: 2em; line-height: 1.2; }
+        h2 { font-size: 1.6em; }
+        p { margin-bottom: 1.4em; font-size: 1.05em; text-align: left; }
+        
+        .photo-wrapper, .post-image-container { max-width: 100%; height: auto; display: block; margin: 25px auto; text-align: center; }
+        .photo-wrapper img, .post-image-container img { max-width: 100% !important; height: auto !important; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .photo-caption { font-family: sans-serif; font-size: 0.85em; color: #666; margin-top: 8px; font-style: italic; }
+
+        /* Desktop Layout (Screens 850px and wider) */
+        @media (min-width: 850px) {
+            body { flex-direction: row; }
+            .mobile-header { display: none; }
+            .sidebar { display: block !important; width: 300px; position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 40px; }
+            .main-content { margin-left: 300px; padding: 60px 50px; max-width: calc(100% - 300px); }
+            p { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-header">
+        <h1>Eitan Feldman</h1>
+        <button class="nav-toggle" onclick="toggleNav()">Menu ☰</button>
+    </div>
+
+    <nav class="sidebar" id="site-sidebar">
+        {% include sidebar.html %}
+    </nav>
+
+    <main class="main-content">
+        {{ content }}
+        
+        <footer style="margin-top: 4em; text-align: center; color: #888; font-family: sans-serif; font-size: 0.85em; padding-top: 2em; border-top: 1px solid #eee;">
+            <p>&copy; {{ 'now' | date: "%Y" }} Eitan Feldman</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleNav() {
+            var sidebar = document.getElementById('site-sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
